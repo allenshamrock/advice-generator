@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+}
+
+.root {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+}
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 400px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 0.23rem;
+}
+
+.card-content{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-content h6 {
+  color: hsl(150, 100%, 66%);
+}
+
+.card-content p {
+  margin: 0;
+  color: hsl(193, 38%, 86%);
+}
+
+img {
+  width: 250px;
+  margin: 10px 30px;
+}
+
+.card-icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4.5rem;
+}
+
+.icon-dice {
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+@media screen and (max-width: 375px) {
+  * {
+    font-size: 18px; 
+  }
+
+  .root {
+    background-color: hsl(218, 23%, 16%);
+    height: auto; 
+  }
+
+  .card-container {
+    width: 100%; 
+    max-width: 375px; 
+  }
+
+  img {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+
+  .card-icons {
+    position: relative; 
+    margin: 10px auto; 
+  }
+
+  .icon-dice {
+    width: 10px; 
+    height: 10px; 
+  }
+}
